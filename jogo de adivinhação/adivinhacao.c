@@ -9,8 +9,8 @@ int main(){
 
     
     printf("********************************\n");
-    printf("Bem vindo ao jogo de adivinhação\n");
-    printf("Tente adivinhar o número secreto\n");
+    printf("Bem vindo ao jogo de adivinhaÃ§Ã£o\n");
+    printf("Tente adivinhar o nÃºmero secreto\n");
     printf("********************************\n\n");
     
     int segundos = time(0);
@@ -24,8 +24,8 @@ int main(){
     int numtentativas;
     int dificuldade;
     
-    printf("Escolha o nível de dificuldade\n");
-    printf("(1) fácil (2) médio (3) difícil\n");
+    printf("Escolha o nÃ­vel de dificuldade\n");
+    printf("(1) fÃ¡cil (2) mÃ©dio (3) difÃ­cil\n");
     printf("Escolha: ");
     scanf("%d", &dificuldade);
     
@@ -54,22 +54,22 @@ int main(){
         float pontuacao;
 
         if(negativo){
-            printf("Você não pode chutar números negativos\n\n");
+            printf("VocÃª nÃ£o pode chutar nÃºmeros negativos\n\n");
             continue;
         }
         else if(acertou){
-            printf("Você acertou!\n");
-            printf("Você acertou em %d tentativas\n", tentativa);
-            printf("Sua pontuação é: %.2f\n", pontos);
+            printf("VocÃª acertou!\n");
+            printf("VocÃª acertou em %d tentativas\n", tentativa);
+            printf("Sua pontuaÃ§Ã£o Ã©: %.2f\n", pontos);
             break;
             
         }
         else if(maior){
-            printf("Seu chute foi maior que o número secreto\n");
+            printf("Seu chute foi maior que o nÃºmero secreto\n");
             
         }
         else if(menor){
-            printf("Seu chute foi menor que o número secreto!\n");
+            printf("Seu chute foi menor que o nÃºmero secreto!\n");
         }
         else if(pontos <= 0){
             pontos = 1;
@@ -83,7 +83,7 @@ int main(){
     }
     
     if(tentativa > numtentativas){
-        printf("Você perdeu\n");
+        printf("VocÃª perdeu\n");
     }
     printf("Fim de jogo!\n");
    
